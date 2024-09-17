@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.iml
 .gradle
 /local.properties
@@ -13,3 +14,90 @@
 .externalNativeBuild
 .cxx
 local.properties
+=======
+### Android Studio ###
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ IDEA files
+*.iml
+.idea/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Gradle Wrapper files
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Profiling
+*.hprof
+
+# Misc
+.DS_Store
+*.swp
+
+# APKs
+*.apk
+*.ap_
+
+# Proguard
+proguard/
+
+# Google Services
+google-services.json
+
+# Firebase Crashlytics
+crashlytics.properties
+fabric.properties
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# NDK
+obj/
+
+# Unity files
+/*.meta
+/*.unity
+/*.unityproj
+/*.mat
+/*.fbx
+/*.controller
+/*.prefab
+/*.anim
+/*.meta
+
+# Temporary files
+tmp/
+temp/
+
+# Build generated folder
+/app/build/
+
+# Mac OS files
+*.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Kotlin build files
+*.kotlin_module
+>>>>>>> 0f15fe77e453122eeeb0f24d422febf7d8bfd2c5
