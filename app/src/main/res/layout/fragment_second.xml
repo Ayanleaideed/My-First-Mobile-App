@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <!-- Display software engineering challenges -->
+    <TextView
+        android:id="@+id/textViewChallenges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#3c73fb"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Button to return to main activity -->
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_selector" />
+</LinearLayout>
