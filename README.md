@@ -1,8 +1,9 @@
 # My-First-Mobile-App
 Assignment 2 Creating a basic kotlin mobile app With implicit and explicit command/Actions
+![img.png](img.png)
 
-
-
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 # Android App Assignment
 
 This app demonstrates two activities in Android with explicit and implicit intents.
