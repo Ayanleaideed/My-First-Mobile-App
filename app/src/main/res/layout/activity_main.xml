@@ -70,7 +70,21 @@
             android:textSize="18sp"
             android:background="#8B0000"
             android:padding="16dp"
-            android:elevation="8dp"/>
+            android:elevation="8dp" />
+
+        <!-- New feature button for "View Image Activity" -->
+        <Button
+            android:id="@+id/button_view_image_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Image Activity"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15sp"
+            android:textSize="18sp"
+            android:background="#8B0000"
+            android:padding="16dp"
+            android:elevation="8dp" />
+
 
         <!-- Separator line -->
         <View

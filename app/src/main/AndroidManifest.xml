@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions for camera and storage access -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,11 +17,12 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
 
-        <!-- Declare SecondActivity here -->
+        <!-- Declare SecondActivity -->
         <activity
             android:name=".SecondActivity"
-            android:exported="false" /> <!-- Added SecondActivity -->
+            android:exported="false" />
 
+        <!-- MainActivity with launcher intent -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -28,6 +33,21 @@
             </intent-filter>
         </activity>
 
-    </application>
+        <!-- ImageActivity for capturing and displaying images -->
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
 
+        <!-- FileProvider setup for image capture -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myfirstapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
 </manifest>

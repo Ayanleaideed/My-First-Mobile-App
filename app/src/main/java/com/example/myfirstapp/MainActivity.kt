@@ -17,18 +17,25 @@ class MainActivity : AppCompatActivity() {
         val textViewName = findViewById<TextView>(R.id.textViewName)
         textViewName.text = "Ayanle Aideed\n1185242"
 
-        // Button to start second activity explicitly
+        // Button to start SecondActivity explicitly
         val buttonExplicit = findViewById<Button>(R.id.buttonExplicit)
         buttonExplicit.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
 
-        // Button to start second activity implicitly (example opens a website)
+        // Button to start a website (example of implicit intent)
         val buttonImplicit = findViewById<Button>(R.id.buttonImplicit)
         buttonImplicit.setOnClickListener {
             val NDSUSite = "https://www.ndsu.edu/"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(NDSUSite))
+            startActivity(intent)
+        }
+
+        // Button to start ImageActivity for image capture and display
+        val buttonViewImageActivity = findViewById<Button>(R.id.button_view_image_activity)
+        buttonViewImageActivity.setOnClickListener {
+            val intent = Intent(this, ImageActivity::class.java)
             startActivity(intent)
         }
     }
