@@ -24,4 +24,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:contentDescription="Captured Image" />
+
+
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Activity"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="#1E88E5"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"/>
+
+
 </LinearLayout>

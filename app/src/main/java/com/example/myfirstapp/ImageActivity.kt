@@ -62,6 +62,14 @@ class ImageActivity : AppCompatActivity() {
             )
         }
 
+        // Button to return to the main activity we need button here to take as back to the main
+        // Button to return to the main activity
+        val buttonMain = findViewById<Button>(R.id.buttonMain)
+        buttonMain.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         buttonCaptureImage.setOnClickListener {
             // Check for camera permission before proceeding
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
